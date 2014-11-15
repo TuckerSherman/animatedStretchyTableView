@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TipView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWl-3T-SkP">
+                    <rect key="frame" x="5" y="295" width="290" height="84"/>
+                    <attributedString key="attributedText">
+                        <fragment content="summary">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Io2-3a-Lb5">
+                    <rect key="frame" x="5" y="60" width="290" height="225"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="225" id="tIb-Y2-ICO"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u51-kJ-EJh">
+                    <rect key="frame" x="5" y="10" width="290" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="XUc-VI-B3o"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="TITLE">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="36" name="DINAlternate-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="WYg-Ls-j3C">
+                    <rect key="frame" x="131" y="380" width="39" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="VAl-nb-9Rw"/>
+                    </constraints>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="u51-kJ-EJh" secondAttribute="trailing" constant="5" id="Ebg-Zl-R3T"/>
+                <constraint firstItem="dWl-3T-SkP" firstAttribute="top" secondItem="Io2-3a-Lb5" secondAttribute="bottom" constant="10" id="Hha-7S-ERQ"/>
+                <constraint firstAttribute="bottom" secondItem="WYg-Ls-j3C" secondAttribute="bottom" constant="10" id="N3V-2i-BPx"/>
+                <constraint firstAttribute="centerX" secondItem="WYg-Ls-j3C" secondAttribute="centerX" constant="-0.5" id="O9Y-ZA-syG"/>
+                <constraint firstAttribute="trailing" secondItem="dWl-3T-SkP" secondAttribute="trailing" constant="5" id="Uvi-mM-GzA"/>
+                <constraint firstItem="Io2-3a-Lb5" firstAttribute="top" secondItem="u51-kJ-EJh" secondAttribute="bottom" constant="10" id="X7I-e2-XPr"/>
+                <constraint firstItem="u51-kJ-EJh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Zdq-Fm-jVu"/>
+                <constraint firstItem="WYg-Ls-j3C" firstAttribute="top" secondItem="dWl-3T-SkP" secondAttribute="bottom" constant="1" id="aqa-v1-DZq"/>
+                <constraint firstItem="u51-kJ-EJh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="b9z-so-gg3"/>
+                <constraint firstItem="dWl-3T-SkP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="kli-Io-GH2"/>
+                <constraint firstItem="Io2-3a-Lb5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="pb8-2K-T11"/>
+                <constraint firstAttribute="trailing" secondItem="Io2-3a-Lb5" secondAttribute="trailing" constant="5" id="ueX-BG-KP7"/>
+                <constraint firstAttribute="bottom" secondItem="dWl-3T-SkP" secondAttribute="bottom" constant="10" id="wBb-37-aaW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="wBb-37-aaW"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="imageView" destination="Io2-3a-Lb5" id="f7F-4e-9Qo"/>
+                <outlet property="pageControl" destination="WYg-Ls-j3C" id="P5f-aU-LHg"/>
+                <outlet property="summary" destination="dWl-3T-SkP" id="NsS-KA-Oyu"/>
+                <outlet property="title" destination="u51-kJ-EJh" id="EjB-bG-Ors"/>
+            </connections>
+            <point key="canvasLocation" x="244" y="378"/>
+        </view>
+    </objects>
+</document>
